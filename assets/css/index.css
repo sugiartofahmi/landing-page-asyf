@@ -181,7 +181,6 @@ main,
   color: rgb(30, 39, 57);
   background-color: white;
 }
-
 .reverse {
   flex-direction: row-reverse;
 }
