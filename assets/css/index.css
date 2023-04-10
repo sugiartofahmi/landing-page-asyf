@@ -37,14 +37,25 @@ main,
 .container-content,
 .container-programs,
 .program,
-.program-body {
+.program-body,
+.container-contact,
+.form-contact,
+form,
+.container-input,
+footer,
+.footer-logo,
+.footer-nav,
+.container-footer {
   display: flex;
 }
 
 #container-header,
 #container-icon,
 #container-header > nav > ul,
-.program {
+.program,
+.container-contact,
+footer,
+.container-footer {
   flex-direction: row;
 }
 
@@ -52,7 +63,12 @@ main,
 .page,
 .container-content,
 .container-programs,
-.program-body {
+.program-body,
+.form-contact,
+form,
+.container-input,
+.footer-logo,
+.footer-nav {
   flex-direction: column;
 }
 
@@ -71,6 +87,7 @@ main,
   color: white;
   position: fixed;
   transition: top 0.3s;
+  z-index: 100;
 }
 
 .pointer:hover {
@@ -99,6 +116,7 @@ main,
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
+  color: #66c336;
 }
 
 .pointer {
@@ -112,7 +130,7 @@ main,
 .page:nth-child(1) {
   min-height: 100vh;
   background: linear-gradient(rgb(30, 39, 57, 0.8), rgb(30, 39, 57, 0.8)),
-    url("/assets/img/BG-Home.svg");
+    url("https://i.ibb.co/KhSsmMH/BG-Home.png");
   background-size: cover;
   text-align: center;
   gap: 20px;
@@ -159,6 +177,12 @@ main,
 .program-image > img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+}
+
+.program-image > img:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #66c336);
+  filter: drop-shadow(5px 5px 5px #66c336);
 }
 
 .program-body {
@@ -183,4 +207,79 @@ main,
 }
 .reverse {
   flex-direction: row-reverse;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.sub-title {
+  font-size: 20px;
+}
+
+.container-contact {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-contact {
+  width: 45%;
+}
+
+form {
+  width: 100%;
+  gap: 20px;
+}
+
+.container-input {
+  font-size: 20px;
+  gap: 10px;
+}
+input {
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-transform: capitalize;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(26, 34, 49);
+}
+
+.container-footer {
+  width: 80%;
+
+  justify-content: space-evenly;
+}
+
+.footer-logo {
+  gap: 20px;
+}
+.container-logo {
+  width: 100px;
+}
+
+.footer-nav > h1:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  color: #66c336;
+}
+
+.container-logo > a > img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(2px 4px 15px #ffffff);
 }
