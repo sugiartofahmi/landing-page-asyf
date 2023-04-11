@@ -183,38 +183,30 @@
             </section>
             <section class="form-contact">
               <form type="submit">
-                <section class="container-input">
-                  <input type="text" id="name" name="name" placeholder="Name" />
-                </section>
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <input type="text" name="city" id="city" placeholder="City" />
+                <input
+                  type="number"
+                  name="zip-code"
+                  id="zip-code"
+                  placeholder="Zipcode"
+                />
 
-                <section class="container-input">
-                  <input type="text" id="city" name="city" placeholder="City" />
-                </section>
-                <section class="container-input">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </section>
-                <section class="container-input">
-                  <input
-                    type="number"
-                    id="zipcode"
-                    name="zipcode"
-                    placeholder="Zipcode"
-                  />
-                </section>
-                <section class="container-input">
-                  <input
-                    type="text"
-                    id="status"
-                    name="status"
-                    placeholder="Status"
-                  />
-                </section>
-                <button type="submit" class="btn">Send</button>
+                <label id="check" class="sub-title"
+                  >Dengan ini saya menyatakan data yang diisi pada form ini
+                  adalah benar dan telah sesuai</label
+                >
+                <input type="checkbox" name="status" id="status" />
+                <button type="submit" id="submit-form" class="btn">
+                  Submit
+                </button>
+                <div class="sub-title" id="warning"></div>
               </form>
             </section>
           </section>
