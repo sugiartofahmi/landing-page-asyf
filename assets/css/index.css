@@ -283,3 +283,6 @@ footer {
   height: 100%;
   filter: drop-shadow(2px 4px 15px #ffffff);
 }
+#status {
+  align-self: flex-start;
+}
