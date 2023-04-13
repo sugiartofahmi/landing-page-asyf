@@ -3,7 +3,9 @@
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: white;
   background-color: rgb(30, 39, 57);
@@ -285,4 +287,7 @@ footer {
 }
 #status {
   align-self: flex-start;
+}
+#warning {
+  color: red;
 }
